@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun resetLastSelectedButton() {
-        lastSelectedButtonLayout?.let {
+        lastSelectedButtonLayout.let {
             findViewById<ImageButton>(lastSelectedButtonId!!).setImageDrawable(
                 ContextCompat.getDrawable(this, lastSelectedIconResId!!)
             )
@@ -103,4 +103,5 @@ class MainActivity : AppCompatActivity() {
             ContextCompat.getColor(this, R.color.white)
         )
     }
+
 }
